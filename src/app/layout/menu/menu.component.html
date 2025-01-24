@@ -1,8 +1,22 @@
-<div class="menu">
-    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
-    <mat-menu #menu="matMenu">
+<div class="menu-container">
+    <!-- Menu de Alunos -->
+    <div class="menu menu-aluno">
+      <button mat-button [matMenuTriggerFor]="menuAlunos">Menu Alunos</button>
+      <mat-menu #menuAlunos="matMenu">
         <button mat-menu-item [routerLink]="['/cadastro-aluno']">Cadastrar Aluno</button>
         <button mat-menu-item [routerLink]="['/listagem-alunos']">Listar Alunos</button>
         <button mat-menu-item [routerLink]="['/listagem-cadastro-alunos']">Listar-Cadastrar Alunos</button>
-    </mat-menu>
-</div>
+      </mat-menu>
+    </div>
+  
+    <!-- Menu de Professores -->
+    <div class="menu menu-professor">
+      <button mat-button [matMenuTriggerFor]="menuProfessores">Menu Professores</button>
+      <mat-menu #menuProfessores="matMenu">
+        <button mat-menu-item [routerLink]="['/manutencao-professor']">Cadastrar Professor</button>
+        <button mat-menu-item [routerLink]="['/listagem-professor']">Listar Professores</button>
+        <button mat-menu-item [routerLink]="['/listagem-cadastro-professor']">Listar-Cadastrar Professores</button>
+      </mat-menu>
+    </div>
+  </div>
+  

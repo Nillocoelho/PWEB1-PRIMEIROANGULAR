@@ -1,3 +1,17 @@
-.menu {
+.menu-container {
+    display: flex;
     background-color: #a7bae6;
-}
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .menu-aluno {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .menu-professor {
+    flex: 1;
+    text-align: right;
+  }
+  
